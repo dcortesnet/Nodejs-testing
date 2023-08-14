@@ -32,5 +32,3 @@ npm-debug.log*
 *.swp
 *~
 
-./01 unit-test/node_modules
-./01 unit-test/package-lock.json
