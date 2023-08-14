@@ -1,4 +1,4 @@
-const { sendEmail } = require('./foo');
+const { sendEmail } = require('./email');
 
 describe('Test dummy object', () => {
   test('sendEmail sends email to recipients', () => {
