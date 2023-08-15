@@ -1,9 +1,9 @@
 const axios = require('axios');
 const getUsers = require('./users');
+jest.mock('axios');
 
 describe('Test stub object', () => {
   test('fetch data and stub resolve', async () => {
-    jest.mock('axios');
     const axiosStub = jest.fn();
     axiosStub.mockResolvedValue({ data: { results: [{ name: { first: 'John', last: 'Doe' } }] } });
     axios.get = axiosStub;
